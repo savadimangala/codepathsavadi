@@ -41,11 +41,13 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Question 1:** "What are your reactions to the Android app development platform so far? Compare and contrast Android's approach to layouts and user interfaces in past platforms you've used."
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** I find Android app development is very interesting. One of the reasons being it is open source and also it has a very large and active developer community. Compared to other platforms, layout is not easy to design and it is a little confusing. Android's activity life cycle management is similar to other platforms but saving data on configuration change is not intuitive. 
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** Adapter is a design pattern used in Android to bind data to views, here ArrayAdapter is used to bind list of data to ListView. Adapter is used to efficiently communicate changes in data to the view, and the view cna refresh itself with new data.
+
+    When the list view needs to show a new row, getView is called to get the view that needs to be shown with appropriate data. ConverView is the old view that was inflated and used to show a different row in listview. It can be reused to show the new rows data and we dont have to inflate another view again.
 
 ## Notes
 
@@ -53,7 +55,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2017 Mangala Savadi
 
         Licensed under the Apache License, Version 2.0 (the "License");
 	    you may not use this file except in compliance with the License.
